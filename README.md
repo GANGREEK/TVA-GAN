@@ -25,7 +25,8 @@ https://github.com/GANGREEK/TVA-GAN.git
 cd TVA-GAN
 ```
 
-
+- Train a model:
+```bash
 #!./jscript2.sh
 python3 train.py --dataroot ./datasets/WHU  --name WHU --model TVAGANModel --no_dropout --gpu_ids 1  --display_id 0 --dataset_mode aligned 
 ```
