@@ -14,10 +14,10 @@ def create_model(opt):
         assert(opt.dataset_mode == 'aligned')
         from .TVA_gan_model import TVAGANModel
         model = TVAGANModel()
-    elif opt.model == 'pan_cycle_gan':
+    elif opt.model == 'per_cycle_gan':
         assert(opt.dataset_mode == 'aligned')
-        from .pan_cycle_gan_model import PanCycleGANModel
-        model = PanCycleGANModel()
+        from .TVAGANModel import TVAGANModel
+        model = TVAGANModel()
     elif opt.model == 'attention_gan':
         assert(opt.dataset_mode == 'aligned')
         from .attention_gan_model import AttentionGANModel
